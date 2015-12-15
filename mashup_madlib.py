@@ -8,7 +8,7 @@
 # tweeted by your bot account. 
 
 # Housekeeping: do not edit
-import json, io, tweepy, time
+import json, io, tweepy, time, urllib2
 from random import randint
 from credentials import *
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -18,15 +18,12 @@ api = tweepy.API(auth)
 
 # Housekeeping: opening JSON files
 # Find more item lists at https://github.com/dariusk/corpora/tree/master/data
-# Click "Raw" button, save file into mashup_madlib folder
-infile = open('mashup_madlib/objects.json','r')
-objectlist = infile.read()
-infile.close()
+# Click "Raw" button, copy URL
+objectfile = urllib2.urlopen('https://raw.githubusercontent.com/dariusk/corpora/master/data/objects/objects.json')
+objectlist = objectfile.read()
 
-infile = open('mashup_madlib/menuitemsNYPL.json','r')
-foodslist = infile.read()
-infile.close()
-
+foodsfile = urllib2.urlopen('https://raw.githubusercontent.com/dariusk/corpora/master/data/foods/menuItems.json')
+foodslist = foodsfile.read()
 
 # Create Python-readable lists of items in JSON files
 objs = json.loads(objectlist)['objects']
