@@ -3,7 +3,7 @@
 
 # Twitter Bot Starter Kit: Responding Bot
 
-# This bot listens to the account @jasonchowbot, and when that account
+# This bot listens to the account @ocertat, and when that account
 # tweets, it responds with a line of Twain
 
 # Download a Project Gutenberg "Plain Text UTF-8" file,
@@ -40,12 +40,12 @@ def runTime():
     # uses the global lasttweet variable, rather than the local one
     global lasttweet
 
-    # gets the most recent tweet by @jasonchowbot and prints its id
-    mostrecenttweet = api.user_timeline('jasonchowbot')[0]
+    # gets the most recent tweet by @ocertat and prints its id
+    mostrecenttweet = api.user_timeline('ocertat')[0]
     print(mostrecenttweet.id)
 
     # compares the two tweets, and tweets a line of Twain
-    # if there is a new tweet from jasonchowbot
+    # if there is a new tweet from @ocertat
     if mostrecenttweet != lasttweet:
         line = tweettext[linenum()]
         api.update_status(status=line)
