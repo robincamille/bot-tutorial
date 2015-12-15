@@ -55,8 +55,11 @@ This script sends out five tweets from the first five lines of an external .txt 
 ##Advanced bot: mashup_madlib.py
 This script treats *The Red Wheelbarrow* as a mad-lib, filling in three blanks from two data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
 
+##Advanced bot: respondingbot.py
+This script from Mark tweets a random line from a .txt file whenever @jasonchowbot tweets.
+
 ##Advanced bot: mashup_markov
-This script uses a Markov chain to create new sentences from another text.
+This script uses a Markov chain to create new sentences from another text, and tweets them.
 
 ###Details
 - Required libraries: tweepy, setuptools, json, urllib2
