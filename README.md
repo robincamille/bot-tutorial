@@ -1,10 +1,8 @@
 #Twitter bot tutorial
-Files for a LACUNY tutorial on building your own Twitter bot
-
-This tutorial was put together by Robin Davis (@robincamille) and Mark Eaton (@MarkEEaton) for a December 15, 2015 workshop for librarians sponsored by the [LACUNY Emerging Technologies Committee](http://commons.gc.cuny.edu/groups/lacuny-emerging-technologies-committee/). You can use these materials any which way; the following instructions are for our workshop.
+This tutorial and its materials were put together by Robin Davis (@robincamille) and Mark Eaton (@MarkEEaton) for a December 15, 2015 workshop for librarians sponsored by the [LACUNY Emerging Technologies Committee](http://commons.gc.cuny.edu/groups/lacuny-emerging-technologies-committee/). You can use these materials any which way; the following instructions are for our workshop. Required libraries: tweepy, setuptools, json, urllib2 or urllib3
 
 ##Download the files
-1. See the "Download ZIP" button toward the upper right? Click it and save the folder to your desktop. 
+See the "Download ZIP" button toward the upper right? Click it and save the folder to your desktop. 
 
 ##Create a Twitter account for your bot
 
@@ -17,7 +15,7 @@ This tutorial was put together by Robin Davis (@robincamille) and Mark Eaton (@M
  - Go to Keys and Access Tokens
  - Create new access token
 
-3. Copy Consumer Key/Secret and Access Key/Secret to credentials.py 
+3. Copy Consumer Key/Secret and Access Key/Secret to **credentials.py**
 
 ##Basic bot: mybot.py
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
@@ -61,5 +59,3 @@ This script from Mark tweets a random line from a .txt file whenever @jasonchowb
 ##Advanced bot: mashup_markov
 This script uses a Markov chain to create new sentences from another text, and tweets them.
 
-###Details
-- Required libraries: tweepy, setuptools, json, urllib2
