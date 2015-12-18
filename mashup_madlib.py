@@ -37,8 +37,8 @@ counter = 0
 while counter < 2: # Change 2 to however many poems you want to produce
     
     # Pick random numbers
-    objnum = randint(0, len(objs))
-    foodnum = randint(0, len(foods))
+    objnum = randint(0, len(objs) - 1)
+    foodnum = randint(0, len(foods) - 1)
 
     # Choose random items from each list using random numbers
     first = objs[objnum] # Syntax: list[number]
