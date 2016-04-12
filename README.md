@@ -1,5 +1,9 @@
 #Twitter bot tutorial
-This tutorial and its materials were put together by Robin Davis (@robincamille) and Mark Eaton (@MarkEEaton) for a December 15, 2015 workshop for librarians sponsored by the [LACUNY Emerging Technologies Committee](http://commons.gc.cuny.edu/groups/lacuny-emerging-technologies-committee/). You can use these materials any which way; the following instructions are for our workshop. Required libraries: tweepy, setuptools, json, urllib2 or urllib3
+This tutorial and its materials were put together by Robin Davis (@robincamille) and Mark Eaton (@MarkEEaton) for a December 15, 2015 workshop for librarians sponsored by the [LACUNY Emerging Technologies Committee](http://commons.gc.cuny.edu/groups/lacuny-emerging-technologies-committee/). You can use these materials any which way; the following instructions are for our workshop. 
+
+See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative Code Examples](http://jitp.commons.gc.cuny.edu/make-a-twitter-bot-in-python-iterative-code-examples/). *Journal of Interactive Technology and Pedagogy*,  April 2016. (Verbose write-up featuring code in this repository.)
+
+**Required libraries:** tweepy, setuptools, json, urllib2 or urllib3
 
 ##Download the files
 See the "Download ZIP" button toward the upper right? Click it and save the folder to your desktop. 
