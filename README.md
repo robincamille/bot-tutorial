@@ -1,4 +1,4 @@
-#Twitter bot tutorial
+# Twitter bot tutorial
 
 This tutorial and its materials were put together by Robin Davis (@robincamille) and Mark Eaton (@MarkEEaton) for a December 15, 2015 workshop for librarians sponsored by the [LACUNY Emerging Technologies Committee](http://commons.gc.cuny.edu/groups/lacuny-emerging-technologies-committee/). You can use these materials any which way; the following instructions are for our workshop. 
 
@@ -6,11 +6,11 @@ See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative
 
 **Required libraries:** tweepy, setuptools, json, urllib2 or urllib3
 
-##Download the files
+## Download the files
 
 See the "Download ZIP" button toward the upper right? Click it and save the folder to your desktop. 
 
-##Create a Twitter account for your bot
+## Create a Twitter account for your bot
 
 1. Go to http://twitter.com and sign up for a new account of your choosing.
  - Be sure to include your mobile number (required for using the API) 
@@ -23,7 +23,7 @@ See the "Download ZIP" button toward the upper right? Click it and save the fold
 
 3. Copy Consumer Key/Secret and Access Key/Secret to **credentials.py**
 
-##Basic bot: mybot.py
+## Basic bot: mybot.py
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
 
@@ -37,7 +37,7 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 - In **tweetlist**, add new things for your bot to tweet. 
 - Increase/decrease time between tweets in **time.sleep(15)** (15 is the number of seconds). 
 
-##Intermediate bot: mybot2.py
+## Intermediate bot: mybot2.py
 
 This script sends out five tweets from the first five lines of an external .txt file.
 
@@ -58,15 +58,15 @@ This script sends out five tweets from the first five lines of an external .txt 
 - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in **for line in tweettext[0:5]**. 
  - [0:5] means from the first thing up to (but not including) the fifth thing
  
-##Advanced bot: mashup_madlib.py
+## Advanced bot: mashup_madlib.py
 
 This script treats *The Red Wheelbarrow* as a mad-lib, filling in three blanks from two data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
 
-##Advanced bot: respondingbot.py
+## Advanced bot: respondingbot.py
 
 This script from Mark tweets a random line from a .txt file whenever @jasonchowbot tweets.
 
-##Advanced bot: mashup_markov
+## Advanced bot: mashup_markov
 
 This script uses a Markov chain to create new sentences from another text, and tweets them.
 
