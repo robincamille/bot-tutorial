@@ -4,6 +4,8 @@ This tutorial and its materials were put together by Robin Davis (@robincamille)
 
 See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative Code Examples](http://jitp.commons.gc.cuny.edu/make-a-twitter-bot-in-python-iterative-code-examples/). *Journal of Interactive Technology and Pedagogy* (Blueprints section).  April 2016. (Verbose write-up featuring code in this repository.)
 
+**2018 update**: We updated our [bot tutorial for an ALA 2018 workshop](https://github.com/MarkEEaton/bot-tutorial-ala). It uses Python 3.
+
 **Required libraries:** tweepy, setuptools, json, urllib2 or urllib3
 
 ## Download the files
