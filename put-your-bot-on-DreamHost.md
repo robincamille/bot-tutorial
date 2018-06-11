@@ -71,6 +71,7 @@ A cron job is a task that is done periodically on a server or other operating sy
 - At the moment the bot should run, take a look at your bot's Twitter page. Does a new tweet appear? 
 - If not, did you get an error message by email? 
 	- You might get an error message even if the tweet is sent. For example, I get an `InsecurePlatformWarning` all the time because I'm still using Python 2.7. 
+- At some point, your bot will stop working, likely because modules need an update or the Twitter API has changed. Make sure your email is in the cron job to get notified of error messages.
 
 ### Common error messages
 - `sh: /home/yourusernamehere/mybots/make_bot_tweet.sh: Permission denied`
@@ -82,7 +83,15 @@ A cron job is a task that is done periodically on a server or other operating sy
 	- You can test your bot from your desktop to check your credentials.
 - `tweepy.error.TweepError: [{u'message': u'Status is a duplicate.', u'code': 187}]`
 	- You can’t send the exact same tweet within a given time period. Just add another character to it or change it entirely.
-- Another Python warning: Fix your script! Run it on your desktop before uploading it to DreamHost and waiting for the cron job to run. 
+- `ImportError: No module named _io` (or similar module errors)
+	- If this is an unusual library that you had to install yourself, activate the virtual environment again and pip install that library.
+	- If it's a module that should be included by defalt, like `\_io`, rebuild the virtual environment. It's a pain (and you'll have to move your bot files to the new directory you make in the process) but necessary, as this is likely a problem with updates from the host’s side that aren’t reflected in your virtual environment.
+- Another Python warning not listed here? Fix your script! Run it on your desktop before uploading it to DreamHost and waiting for the cron job to run. 
+
+## Tips for running multiple bots
+- Each bot should have its own credentials, Python script, and `.sh` script. These 3 files should be consistently named for your own organization - e.g., give them all the same prefix.
+- Cron jobs are bot-specific.
+- Ensure that the bot's Twitter handle is in its Python script or credentials file so you can keep things straight.
 
 
 
