@@ -2,10 +2,11 @@
 
 *Written June 2018*
 
-You don't have to run your bot from your desktop! You can, but it will shut down every time your computer does. Host your bot instead! 
+You don't have to run your bot from your desktop! You can, but it will shut down every time your computer does. This tutorial shows you how to host your Twitter bot with DreamHost. 
 
-I use [DreamHost](https://www.dreamhost.com/) and like them a lot. If you happen to have a DreamHost hosting account, these instructions will work for you. I have no idea if any of the below instructions work for other hosting services. ¯\\\_(ツ)\_/¯
+I use [DreamHost](https://www.dreamhost.com/), a paid hosting service, and I like them a lot. If you happen to have a DreamHost hosting account, these instructions will work for you. I have no idea if any of the below instructions work for other hosting services. ¯\\\_(ツ)\_/¯
 
+This tutorial is specific to the [bot-tutorial](https://github.com/robincamille/bot-tutorial) it's housed in but can be adapted. It assumes you use the Tweepy library.
 
 Caveats:
 - **Intermediate and advanced users only!** You should already know how the command line works and what commands like `cd` and `chmod` mean. 
@@ -38,8 +39,12 @@ This may be the hardest part. You might run into errors. Google them and good lu
 
 ## Put your files in mybots/
 1. Using an FTP client (I like [Transmit](https://www.panic.com/transmit/) for Mac), navigate to your `mybots/` folder.
-1. Upload your bot's `.py` script(s) in there, along with any data files (like `.txt` files the bots use). 
-	- These files will reside on the same level as `bin/` and the other directories that were automatically added when you installed the virtual environment.
+1. Upload these files:
+	- Your bot's main `.py` script
+	- Your bot's `credentials.py` script
+	- Any data files (like `.txt` files the bots use). 
+
+These files will reside on the same level as `bin/` and the other directories that were automatically added when you installed the virtual environment.
 
 ## Make a shell script
 1. Make a new plaintext file that says this: 
@@ -51,7 +56,7 @@ This may be the hardest part. You might run into errors. Google them and good lu
 >
 > `python tweetscript.py`
 
-2. The directory after `cd` will differ for you: be sure to change `yourusername`, `mybots`, and `tweetscript.py` accordingly. 
+2. Change `yourusername`, `mybots`, and `tweetscript.py` accordingly. 
 1. Save this file as `make_bot_tweet.sh` or similar. Add it to `mybots/` alongside your script.
 1. ⚠️ **Important!!** In your FTP client or through SSH, be sure that your `make_bot_tweet.sh` has User Execute permissions. (a.k.a., chmod 744.)
 
