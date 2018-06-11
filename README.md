@@ -6,6 +6,8 @@ See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative
 
 **2018 update**: We updated our [bot tutorial for an ALA 2018 workshop](https://github.com/MarkEEaton/bot-tutorial-ala). It uses Python 3.
 
+---
+
 **Required libraries:** tweepy, setuptools, json, urllib2 or urllib3
 
 ## Download the files
@@ -72,3 +74,6 @@ This script from Mark tweets a random line from a .txt file whenever @jasonchowb
 
 This script uses a Markov chain to create new sentences from another text, and tweets them.
 
+## Now what? 
+
+Consider hosting your bot so it can tweet happily all by itself! If you happen to have DreamHost, I wrote up a step-by-step tutorial for hosting your bot: see **put-your-bot-on-DreamHost.md**.
